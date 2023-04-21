@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <script src="https://kit.fontawesome.com/5f780ea240.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Music Shop <i class="fa-solid fa-icons"></i></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html"> <i class="fa-solid fa-rotate-left"></i>
+                            seguir comprando </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./factura.html"> <i
+                                class="fa-solid fa-cart-shopping"></i> Factura </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">2022 music shop</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Factura</h2>
+            <div class="contenedor-carrito">
+                <section id="contenido" cl>
+                    <br>
+                    <fieldset id="datos">
+                        <h4>Datos de receptor</h4>
+                        <input type="text" class="llenado RS datos-receptor" placeholder="Ingrese su razón social" ;>
+                        <h4>RFC</h4><br>
+                        <input type="text" class="llenado RFC datos-receptor" placeholder="Ingrese su RFC" ;>
+                        <label id="titulo-conceptos" class="titulo-conceptos"></label>
+                        <h4>No. de Conceptos:</h4><br>
+                        <input type="number"class="llenado RFC datos-receptor" id="numero" min="0" max="20" value="0">
+                        <button id="generar" class="carrito-acciones-comprar">Generar</button>
+            </div>
+            </fieldset>
+            <div id="conceptos" class="wows">
+            </div>
+            <button id="aconcepto" class="agregar">Agregar concepto: </button>
+            <div id="tabla">
+                <table>
+                    <tr>
+                        <th>Subtotal</th>
+                        <td id="sustotal">0.00</td>
+                    </tr>
+                    <tr>
+                        <th>IVA</th>
+                        <td id="ivaxd">0.00</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td id="totalxd">0.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <button id="previsualizar" class="agregar previsualizar">Previsualizar Factura</button>
+            </div>
+            <p id="texto" class="texto" style="top:50px; left:50px;"></p>
+            </section>
+    </div>
+    </main>
+    </div>
+    <script src="../js/factura.js"></script>
+</body>
+
+</html>

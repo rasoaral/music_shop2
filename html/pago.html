@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music shop</title>
+    <script src="https://kit.fontawesome.com/5f780ea240.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('Bv_Ds2lmPc4q6UwS0')
+    </script>
+    <link rel="stylesheet" href="../css/main2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Music Shop <i class="fa-solid fa-icons"></i></h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html"> <i class="fa-solid fa-rotate-left"></i>
+                            seguir comprando </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu active" href="./carrito.html"> <i class="fa-solid fa-cart-shopping"></i>
+                            Pago </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">2022 music shop</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Pago</h2>
+            <div id="carrito" class="contenedor-carrito">
+                <form id="form">
+                    <div class="field carrito-acciones-izquierda">
+                    <h3><label for="from_name">Nombre</label></h3><br>
+                        <input type="text" name="from_name"  class="form-control llenado" id="from_name" ><br>
+                    </div>
+                    <div class="field">
+                        <h3><label for="cc_to">Correo</label></h3><br>
+                        <input type="email" name="cc_to" class="form-control llenado" id="cc_to">
+                    </div>
+                    <button type="submit" id="button" class="carrito-acciones-comprar" value="Send Email">Envíar mensaje</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../js/pago.js"></script>
+</body>
+
+</html>
